@@ -1,0 +1,132 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('Chaflog.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-top: 60px;  
+}
+
+/* Header */
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Header - Navigasyon */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff7043;
+  color: white;
+}
+
+/* Sayfa Düzeni - Ana İçerik */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px;  /* Header'dan sonra boşluk */
+}
+
+/* Filtreleme Bölümü */
+.filter-section {
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-section input, 
+.filter-section select, 
+.filter-section button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Tarif Kartları */
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+}
+
+.recipe-card h3 {
+  margin-top: 0;
+}
+
+.recipe-card a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2196f3;
+}
+
+/* Login/Kayıt Sayfası */
+.login-container, .register-container, .add-recipe-container {
+  max-width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+/* Butonlar */
+button {
+  padding: 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button {
+  background-color: #ff7043;
+}
+
+.register-container button {
+  background-color: #4caf50;
+}
+
+.add-recipe-container button {
+  background-color: #2196f3;
+}
+
+.filter-section form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
